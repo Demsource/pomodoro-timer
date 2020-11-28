@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    background-color: #1E3F20;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+#root {
+    width: 80%;
+}
+.setTimerWrapper {
+    font-size: .7rem;
+    width: 40%;
+    margin: 0 20px;
+}
+.setTimerWrapper h2 {
+    margin: 5px;
+}
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 5px 10px;
+    padding: 5px;
+    outline: none;
+}
+.setTimerWrapper span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.timerWrapper {
+    display: inline-block;
+    border: 3px solid #1A1F16;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 65%;
+    padding: 10px;
+    word-wrap: break-word;
+}
+.timerWrapper #timer-label{
+    margin: 0px;
+}
+.timerWrapper #time-left{
+    font-size: 4rem;
+}
+
+address {
+    color: #345830;
+    font-size: .6rem;
+    font-family: 'Lexend Deca', Geneva, Tahoma, sans-serif;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 10px;
+}
+address a {
+    color: #345830;
+    text-decoration: none;
+}
+address a:hover {
+    color: #1A1F16;
+}
+
+@media only screen and (max-width: 600px) {
+    .timerWrapper {
+        width: 100%;
+    }
+  }
